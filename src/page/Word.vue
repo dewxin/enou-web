@@ -20,7 +20,7 @@ import WordAside from "../components/word/WordAside";
 import WordMain from "../components/word/WordMain";
 
 export default {
-name: "word",
+name: "Word",
   components: {
     WordMain,
     WordAside

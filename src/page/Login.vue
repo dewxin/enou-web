@@ -43,7 +43,7 @@ export default {
       }).then(function (response){
         console.log(response.data);
         localStorage.token = response.data;
-        login.$router.push('/home');
+        login.$router.push('/main');
       }).catch(function (error){
         if (error.response) {
           // The request was made and the server responded with a status code

@@ -29,5 +29,8 @@ export default {
 </script>
 
 <style>
-
+  body {
+    width:100%;
+    margin:0;
+  }
 </style>
