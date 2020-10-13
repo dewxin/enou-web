@@ -14,7 +14,7 @@ export default {
       }).then(function (response){
         console.log(response);
         delete localStorage.token;
-        mine.$router.push("/login");
+        mine.$router.push("/home");
       })
 
     }
