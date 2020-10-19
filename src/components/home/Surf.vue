@@ -145,7 +145,7 @@ div {
   }
   
   .move {
-    // animation: move 1000ms / $speed ease-in-out infinite alternate;
+     animation: move 1000ms / $speed ease-in-out infinite alternate;
   }
   
   .human {

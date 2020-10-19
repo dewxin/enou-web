@@ -40,7 +40,7 @@ name: "Word",
           time: timeStampMilli
         },
       }).then(function (response){
-        word.words= response.data;
+        word.words= response.data.data;
         console.log(response);
       }).catch(function (thrown){
         console.log(thrown);

@@ -13,18 +13,8 @@ export default {
   name: 'App',
   router,
   components: {
-  //  Registry,
- ////   Login
   },
-  methods:{
-    hasToken() {
-      return localStorage.token != null;
-    },
 
-    onLogin() {
-
-    }
-  }
 }
 </script>
 
