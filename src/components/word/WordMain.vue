@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="word-main">
     <SingleWordRow v-for="w in words" :key="w.id" :word="w.word" :id="w.id">
     </SingleWordRow><br>
   </div>
@@ -17,4 +17,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

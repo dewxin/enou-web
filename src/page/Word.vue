@@ -1,14 +1,14 @@
 <template>
 
   <el-container>
-    <el-aside width="200px">
+    <el-aside width="8rem">
       <word-aside @queryWordAfter="queryWordAfter"/>
-    </el-aside>
-      <el-main>
-        <word-main :words="words">
+    </el-aside >
+    <el-main width="8rem">
+      <word-main :words="words">
 
-        </word-main>
-      </el-main>
+      </word-main>
+    </el-main>
   </el-container>
 
 

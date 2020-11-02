@@ -1,7 +1,7 @@
 <template>
   <div class="word-div">
     <el-link type="primary" :href="link" target="_blank" class="word-link">{{ word }}</el-link>
-    <el-button class="word-button" >编辑</el-button>
+    <!-- <el-button class="word-button" >编辑</el-button> -->
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .word-div{
   margin-top: 5px;
-  width: 50%;
+  text-align: left;;
 }
 
 .word-link {
