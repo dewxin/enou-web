@@ -12,8 +12,6 @@
             <span>查看单词</span>
           </template>
           <el-menu-item-group>
-<!--            <template slot="title">分组一</template>-->
-<!--            https://tool.lu/timestamp/-->
             <el-menu-item index="1-1" @click="handleClick" :timeback="86400000">一天</el-menu-item>
             <el-menu-item index="1-2" @click="handleClick" :timeback="604800000">一周</el-menu-item>
             <el-menu-item index="1-3" @click="handleClick" :timeback="1535374762785">全部</el-menu-item>  <!-- 公元2年后-->
