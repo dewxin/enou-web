@@ -5,7 +5,7 @@
       <word-aside @queryWordAfter="queryWordAfter"/>
     </el-aside >
     <el-main width="8rem">
-      <word-main :words="words">
+      <word-main ref="wordmain">
 
       </word-main>
     </el-main>
@@ -24,27 +24,9 @@ name: "Word",
     WordMain,
     WordAside
   },
-  data() {
-    return {
-      words:[],
-    }
-  },
   methods: {
     queryWordAfter(timeStampMilli) {
-      let word = this;
-      this.axios({
-        method: 'get',
-        url: process.env.VUE_APP_HOST+"/word",
-        params: {
-          time: timeStampMilli
-        },
-      }).then(function (response){
-        word.words= response.data.data;
-        console.log(response);
-      }).catch(function (thrown){
-        console.log(thrown);
-        //todo pop a window
-      });
+      this.$refs.wordmain.updateTimeStamp(timeStampMilli);
     }
   }
 }

@@ -24,6 +24,9 @@ export default {
 
   methods:{
     getWordDef() {
+      let website = "https://cn.bing.com/search?q="+this.word+"+define&qs=n";
+      window.open(website);
+      /*
         let oneWord = this;
         oneWord.dialogTableVisible = true;
         this.axios({
@@ -39,6 +42,7 @@ export default {
             console.log(thrown);
         //todo pop a window
         });
+        */
     },
     learn() {
       let oneWord = this;
